@@ -9,7 +9,7 @@ const Home = () => {
         initial={{x : '100vw'}}
         animate={{x : '0vw'}}
         transition={{type : 'tween', duration : 1, delay : 6}}>
-            <p className="p-2 md:p-4 text-2xl md:text-3xl lg:text-6xl font-extrabold fira-code">I'm</p>
+            <p className="p-2 md:p-4 text-2xl md:text-3xl lg:text-6xl font-extrabold fira-code">I am</p>
             <p className="p-2 md:p-4 text-2xl md:text-3xl lg:text-6xl font-extrabold high-blue fira-code">Vishu Kalier</p>
         </motion.div>
     );
