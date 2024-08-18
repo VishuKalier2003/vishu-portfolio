@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {background-color : transparent; margin : 0px; outline : none; overflow-x: hidden;
+    padding: 0px; color : rgb(255, 255, 255, 0.95); font-family: "Fira Code", monospace;}
+
+.outline {border : 0.2px solid white;}
+.black-bg-25 {background-color: rgba(15, 15, 15, 0.25);}
+.slider1 {top : 0px; left: 0px;}
+.slider2 {top : 20vh; left: 0px;}
+.slider3 {top : 40vh; left: 0px;}
+.slider4 {top : 60vh; left: 0px;}
+.slider5 {top : 80vh; left: 0px;}
+
+/** Font Family */
+.montserrat {font-family: "Montserrat", sans-serif;}
+.open-sans {font-family: "Open Sans", sans-serif;}
+.fira-code {font-family: "Fira Code", monospace;}
+.source-code {font-family: "Source Code Pro", monospace;}
+.font-50 {font-weight: 100;}
+.font-100 {font-weight : bold;}
+.font-25 {font-weight:lighter;}
+
+/** Font-colors and backgrounds */
+
+.h-36rem {height: 32rem;}
+
+.deep-blue {color : rgba(6, 32, 86, 0.95)}
+.deep-blue-bg {background-color: rgba(6, 32, 86, 0.95);}
+.water-blue {color : rgba(8, 102, 242, 0.9)}
+.water-blue-bg {background-color: rgba(8, 102, 242, 0.9);}
+.light-blue {color : rgba(56, 189, 248, 0.9)}
+.light-blue-bg {background-color: rgba(56, 189, 248, 0.9);}
+.navy-blue {color : rgba(99, 102, 241, 0.9)}
+.navy-blue-bg {background-color: rgba(99, 102, 241, 0.9);}
+.high-blue {color: rgba(0, 125, 255, 0.9);}
+.high-blue-bg {background-color: rgba(0, 125, 255, 0.9);}
+.bg-blue {background-color: rgba(6, 32, 86);}
+.black {color : rgba(0, 0, 0, 0.8);}
+
+.block {
+    width: 25px; height: 25px; transition-duration: 1s; border-radius: 20%;
+}
+
+.block:hover {background-color: rgba(255, 255, 255, 0.15); box-shadow: 0px 0px 0px 1px rgba(56, 189, 248, 0.9);
+transition-duration: 0.1s;}
+
+.block-hovered {background-color: rgba(255, 255, 255, 0.15); box-shadow: 0px 0px 0px 1px rgba(56, 189, 248, 0.9);
+    transition-duration: 0.1s;}
+
+.scroll-watcher {position: fixed; height: 3px; top: 0; z-index: 1000; width: 100%; scale: 0 1; 
+    background: linear-gradient(rgba(56, 189, 248, 0.9), rgba(0, 125, 255, 0.9)), rgba(6, 32, 86, 0.9);
+    transform-origin: left; animation: scroll-watch linear ;animation-timeline: scroll();}
+
+@keyframes scroll-watch {
+    to {scale : 1 1;}
+}
+
+.button-outer {box-shadow: 0px 0px 0px 1.5px rgba(6, 32, 86, 0.9), 0px 0px 0px 3px rgba(0, 125, 255, 0.9);}
+.z-1000 {z-index: 1000;}
+.scaling {scale: 1; transition-duration: 0.5s;}
+.scaling:hover {scale: 1.25; color: rgba(255, 255, 255, 0.9);}
+.white-shadow {box-shadow: 0px  0px 3px 3px rgba(255, 255, 255, 0.35);}
