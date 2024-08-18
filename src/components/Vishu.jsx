@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Vishu = () => {
+const Home = () => {
 
     return (
         <motion.div className="relative left-0 top-60 h-16 w-full flex flex-row justify-start items-center ml-8"
@@ -15,4 +15,4 @@ const Vishu = () => {
     );
 }
 
-export default Vishu;
+export default Home;

@@ -2,7 +2,7 @@
 import React from "react";
 import { GlobeDemo } from "../globeDemo";
 import NameBox from "../NameBox";
-import Vishu from "../Vishu";
+import Home from "../Vishu";
 
 const NameGlobe = () => {
     return(
@@ -10,7 +10,7 @@ const NameGlobe = () => {
             <GlobeDemo className="" />
             <div className="w-screen md:w-1/2 flex flex-row md:flex-col">
             <NameBox className="" />
-            <Vishu className='' />
+            <Home className='' />
             </div>
         </section>
     )
