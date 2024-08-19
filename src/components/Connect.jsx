@@ -1,31 +1,38 @@
 'use client';
-import { motion } from "framer-motion";
-import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import React, { useState } from "react";
+import {FaFacebook, FaGithub, FaLinkedin, FaWhatsapp} from 'react-icons/fa';
+import {motion} from 'framer-motion';
 
-const Connect = ({ open }) => {
-    return (
-        <motion.div
-            initial={{ x: "100vw", opacity: 0 }}   // Initial state (off-screen)
-            animate={{ x: open ? "0vw" : "100vw", opacity: open ? 1 : 0 }}   // Animate to visible or hidden
-            transition={{ duration: 0.5, ease: "easeInOut" }}  // Transition settings
-            className="fixed top-0 left-3/4 h-screen w-1/4 deep-blue-bg z-50 rounded-3xl"
-        >
-            <section className="relative w-full white-shadow rounded-3xl h-full flex flex-col justify-evenly items-center">
+const Connect = () => {
+    const [click, setClick] = useState(false);
+    function mouseClick() {
+        setClick(!click);
+    }
+    return(
+        <section className="relative w-32 lg:w-40 h-12">
+            <div className={`source-code text-center text-md md:text-2xl z-50 cursor-pointer h-12 light-blue-bg pt-2 black rounded-xl 
+                font-normal md:font-bold ${click ? 'tracking-widest' : '' }`}
+            onClick={() => mouseClick()}>{!click ? "Connect" : "Wait"}</div>
+            {click && <motion.div className={`absolute top-0 left-2 z-10 w-32 md:w-40 lg:w-60 flex flex-row justify-around items-center h-12 light-blue-bg}`}
+            initial={{x : 0, opacity : 0}}
+            animate={{x : '10rem', opacity : 1}}
+            transition={{type : "spring", duration : 1, delay : 0.25}}>
                 <a href="https://wa.me/7300764957" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp className="text-6xl light-blue z-50 scaling" />
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61551733637476" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook className="text-6xl light-blue z-50 scaling" />
+                    <FaWhatsapp className="text-4xl light-blue scaling" />
                 </a>
                 <a href="https://www.linkedin.com/in/vishukalier18082003/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="text-6xl light-blue z-50 scaling" />
+                    <FaLinkedin className="text-4xl light-blue scaling" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61551733637476" target="_blank" rel="noopener noreferrer">
+                    <FaFacebook className="text-4xl light-blue scaling" />
                 </a>
                 <a href="https://github.com/VishuKalier2003" target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="text-6xl light-blue z-50 scaling" />
+                    <FaGithub className="text-4xl light-blue scaling" />
                 </a>
-            </section>
-        </motion.div>
-    );
+            </motion.div>
+            }
+        </section>
+    )
 }
 
 export default Connect;

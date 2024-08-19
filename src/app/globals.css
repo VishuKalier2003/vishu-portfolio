@@ -60,6 +60,5 @@ transition-duration: 0.1s;}
 
 .button-outer {box-shadow: 0px 0px 0px 1.5px rgba(6, 32, 86, 0.9), 0px 0px 0px 3px rgba(0, 125, 255, 0.9);}
 .z-1000 {z-index: 1000;}
-.scaling {scale: 1; transition-duration: 0.5s;}
-.scaling:hover {scale: 1.25; color: rgba(255, 255, 255, 0.9);}
-.white-shadow {box-shadow: 0px  0px 3px 3px rgba(255, 255, 255, 0.35);}
+.scaling {scale: 1; color : rgba(56, 189, 248, 0.9); transition-duration: 0.5s;}
+.scaling:hover {scale: 1.25; color: rgba(8, 102, 242, 0.9);}
