@@ -40,7 +40,7 @@ const Information = () => {
         <FlipWords className="relative light-blue font-bold" words={units} /> <br />
         and worked on multiple projects. Always ready to showcase the skills at hand. Always <FlipWords className="relative light-blue font-bold" words={works} /> <br />
         towards goals of 
-         <FlipWords className="relative light-blue font-bold" words={tenses} />.
+         <FlipWords className="relative light-blue font-bold" words={tenses} />
       </div>
     </div>
       </motion.div>

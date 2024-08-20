@@ -6,6 +6,7 @@ import TopBar from "../components/TopBar";
 import { HeroScrollDemo } from "../components/Ipad";
 import Footer from "@/components/footer";
 import Information from "@/components/Information";
+import LampArea from "@/components/LampArea";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <NameGlobe />
       <HeroScrollDemo />
       <Information />
+      <LampArea />
       <Footer page={'home'} />
     </div>
   );
