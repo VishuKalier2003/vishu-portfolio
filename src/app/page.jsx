@@ -4,6 +4,8 @@ import Slider from "../components/Slider";
 import './globals.css';
 import TopBar from "../components/TopBar";
 import { HeroScrollDemo } from "../components/Ipad";
+import Footer from "@/components/footer";
+import Information from "@/components/Information";
 
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <Hero />
       <NameGlobe />
       <HeroScrollDemo />
+      <Information />
+      <Footer page={'home'} />
     </div>
   );
 }

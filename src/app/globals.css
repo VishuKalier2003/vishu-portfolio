@@ -40,6 +40,7 @@ body {background-color : transparent; margin : 0px; outline : none; overflow-x: 
 .bg-blue {background-color: rgba(6, 32, 86);}
 .black {color : rgba(0, 0, 0, 0.8);}
 
+
 .block {
     width: 25px; height: 25px; transition-duration: 1s; border-radius: 20%;
 }
@@ -62,3 +63,8 @@ transition-duration: 0.1s;}
 .z-1000 {z-index: 1000;}
 .scaling {scale: 1; color : rgba(56, 189, 248, 0.9); transition-duration: 0.5s;}
 .scaling:hover {scale: 1.25; color: rgba(8, 102, 242, 0.9);}
+
+.shadow-light-blue {
+    -webkit-text-stroke: 3px solid rgba(56, 189, 248, 0.9) !important; color: transparent;
+  }
+  

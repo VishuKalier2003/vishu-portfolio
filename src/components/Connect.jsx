@@ -15,8 +15,8 @@ const Connect = () => {
             onClick={() => mouseClick()}>{!click ? "Connect" : "Wait"}</div>
             {click && <motion.div className={`absolute top-0 left-2 z-10 w-32 md:w-40 lg:w-60 flex flex-row justify-around items-center h-12 light-blue-bg}`}
             initial={{x : 0, opacity : 0}}
-            animate={{x : '10rem', opacity : 1}}
-            transition={{type : "spring", duration : 1, delay : 0.25}}>
+            animate={click ? {x : '10rem', opacity : 1} : {x : 0, opacity : 0}}
+            transition={click ? {type : "spring", duration : 1, delay : 0.25} : {type : "spring", duration : 1, delay : 0.25}}>
                 <a href="https://wa.me/7300764957" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp className="text-4xl light-blue scaling" />
                 </a>
