@@ -22,7 +22,7 @@ const Hero = () => {
 
     return (
         <motion.div
-            className="relative w-screen flex flex-row h-32 md:h-36 rounded-xl lg:rounded-2xl black-bg-25"
+            className="relative w-screen flex flex-row h-32 md:h-36 rounded-xl lg:rounded-2xl black-bg-25 z-1000"
             initial={{ x: '-100vw' }}
             animate={{ x: '0vw' }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 0.5, delay: 5 }}

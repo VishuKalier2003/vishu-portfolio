@@ -88,3 +88,24 @@ transition-duration: 0.1s;}
 
 .change-bg {background-color: rgba(56, 189, 248, 0.9); color: rgba(1, 1, 1, 0.95); border-radius: 1rem;; transition-duration: 1s;}
 .revert {background-color: transparent; color : rgb(255, 255, 255, 0.95); border-radius: none; transition-duration: 1s;}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: rgba(56, 189, 248, 0.9);
+    border-right-color: rgba(8, 102, 242, 0.9);
+    border-bottom-color: rgba(0, 125, 255, 0.9);
+    border-left-color : rgba(6, 32, 86, 0.9);
+    animation: rotateBorder 2s linear infinite;
+}
+
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
