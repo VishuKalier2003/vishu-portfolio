@@ -15,14 +15,22 @@ const LampArea = () => {
     const [idx, setIdx] = useState(null);
     const [show, setShow] = useState(false);
 
-    const describe = [<div className="source-code">Solved <span className="relative light-blue">950+</span> Questions of Data Structures and Algorithms on Leetcode</div>, 
-        <div className="source-code">Contributed and Committed <span className="relative light-blue">380+</span> Repositories on Github actively</div>,
-        <div className="source-code">Worked on <span className="relative light-blue">20+</span> Projects developing the codebase and services</div>, 
-        <div className="source-code">Demonstrated expertise by resolving <span className="relative light-blue">8+</span> bugs in Open Source and as a participant in Hactoberfest</div>, 
-        <div className="source-code">Grabbed and collaborated with <span className="relative light-blue">2+</span> Internships for escalation of skills</div>, 
-        <div className="source-code">Maintained steady <span className="relative light-blue">9+</span> Grade point throughout the University Academics</div>];
-    const Icons = [<SiLeetcode />, <FaGithub /> ,<GoProjectSymlink />, <SiOpensourcehardware />, <MdAssuredWorkload />, <FaSchool />]
-
+    const describe = [
+        <div key="desc-0" className="source-code">Solved <span className="relative light-blue">950+</span> Questions of Data Structures and Algorithms on Leetcode</div>, 
+        <div key="desc-1" className="source-code">Contributed and Committed <span className="relative light-blue">380+</span> Repositories on Github actively</div>,
+        <div key="desc-2" className="source-code">Worked on <span className="relative light-blue">20+</span> Projects developing the codebase and services</div>, 
+        <div key="desc-3" className="source-code">Demonstrated expertise by resolving <span className="relative light-blue">8+</span> bugs in Open Source and as a participant in Hactoberfest</div>, 
+        <div key="desc-4" className="source-code">Grabbed and collaborated with <span className="relative light-blue">2+</span> Internships for escalation of skills</div>, 
+        <div key="desc-5" className="source-code">Maintained steady <span className="relative light-blue">9+</span> Grade point throughout the University Academics</div>
+      ];
+      const Icons = [
+        <SiLeetcode key="icon-0" />, 
+        <FaGithub key="icon-1" />, 
+        <GoProjectSymlink key="icon-2" />, 
+        <SiOpensourcehardware key="icon-3" />, 
+        <MdAssuredWorkload key="icon-4" />, 
+        <FaSchool key="icon-5" />
+      ];
     const nowShootStars = (isVisible) => {
         if (isVisible) {
             const canvas = document.getElementById('canvas1');
