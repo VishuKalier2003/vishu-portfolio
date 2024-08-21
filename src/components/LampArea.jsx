@@ -16,20 +16,20 @@ const LampArea = () => {
     const [show, setShow] = useState(false);
 
     const describe = [
-        <div key="desc-0" className="source-code">Solved <span className="relative light-blue">950+</span> Questions of Data Structures and Algorithms on Leetcode</div>, 
-        <div key="desc-1" className="source-code">Contributed and Committed <span className="relative light-blue">380+</span> Repositories on Github actively</div>,
-        <div key="desc-2" className="source-code">Worked on <span className="relative light-blue">20+</span> Projects developing the codebase and services</div>, 
-        <div key="desc-3" className="source-code">Demonstrated expertise by resolving <span className="relative light-blue">8+</span> bugs in Open Source and as a participant in Hactoberfest</div>, 
-        <div key="desc-4" className="source-code">Grabbed and collaborated with <span className="relative light-blue">2+</span> Internships for escalation of skills</div>, 
-        <div key="desc-5" className="source-code">Maintained steady <span className="relative light-blue">9+</span> Grade point throughout the University Academics</div>
+        <div className="source-code">Solved <span className="relative light-blue">950+</span> Questions of Data Structures and Algorithms on Leetcode</div>, 
+        <div className="source-code">Contributed and Committed <span className="relative light-blue">380+</span> Repositories on Github actively</div>,
+        <div className="source-code">Worked on <span className="relative light-blue">20+</span> Projects developing the codebase and services</div>, 
+        <div className="source-code">Demonstrated expertise by resolving <span className="relative light-blue">8+</span> bugs in Open Source and as a participant in Hactoberfest</div>, 
+        <div className="source-code">Grabbed and collaborated with <span className="relative light-blue">2+</span> Internships for escalation of skills</div>, 
+        <div className="source-code">Maintained steady <span className="relative light-blue">9+</span> Grade point throughout the University Academics</div>
       ];
       const Icons = [
-        <SiLeetcode key="icon-0" />, 
-        <FaGithub key="icon-1" />, 
-        <GoProjectSymlink key="icon-2" />, 
-        <SiOpensourcehardware key="icon-3" />, 
-        <MdAssuredWorkload key="icon-4" />, 
-        <FaSchool key="icon-5" />
+        <SiLeetcode />, 
+        <FaGithub />, 
+        <GoProjectSymlink />, 
+        <SiOpensourcehardware />, 
+        <MdAssuredWorkload />, 
+        <FaSchool />
       ];
     const nowShootStars = (isVisible) => {
         if (isVisible) {
@@ -130,7 +130,6 @@ const LampArea = () => {
                         animate={idx !== null ? {opacity : 1, background : "linear-gradient(to bottom right, rgba(15, 15, 15, 0.25) 70%, rgba(8, 102, 242, 0.9) 30%"}
                         : {opacity : 0, background : "linear-gradient(to bottom right, rgba(15, 15, 15, 0.25) 20%, rgba(8, 102, 242, 0.9) 80%"}}
                         transition={{ duration: 1 }}
-                        key={idx}
                     >
                         <div className="relative p-6 md:p-10 lg:p-24 text-2xl md:text-4xl lg:text-6xl light-blue">{Icons[idx]}</div>
                         <div className="relative p-2 md:p-4 lg:p-6 text-lg md:text-xl lg:text-3xl text-center pl-4 pr-4 md:pl-6 md:pr-6 lg:pl-10 lg:pr-10">{describe[idx]}</div>
