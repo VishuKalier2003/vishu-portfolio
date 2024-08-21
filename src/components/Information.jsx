@@ -17,19 +17,23 @@ const Information = () => {
     >
       {/* First div sliding left */}
       <motion.div
-        className="relative w-1/2 deep-blue-bg h-screen z-1000"
+        className="relative w-1/2 deep-blue-bg h-screen z-1000 flex flex-row justify-end items-center pr-4"
         initial={{ x: "0vw", backgroundColor : "rgba(6, 32, 86, 0.95)" }}  // Start off-screen
         animate={isHovered ? { x: "-50vw" , backgroundColor : "rgba(15, 15, 15, 0.25)" } : { x: "0vw", backgroundColor : "rgba(6, 32, 86, 0.95)" }}  // Slide in on hover, revert on leave
         transition={{ duration: 1.5, ease: "easeInOut", delay : 1 }}  // Customize transition timing
-      />
+      >
+        <p className="absolute z-50 text-lg md:text-[3rem] lg:text-[6rem] fira-code">A <span className="relative text-lg md:text-[3rem] lg:text-[6rem] light-blue z-50 fira-code">little</span> bit</p>
+      </motion.div>
 
       {/* Second div sliding right */}
       <motion.div
-        className="relative w-1/2 deep-blue-bg h-screen z-1000"
+        className="relative w-1/2 deep-blue-bg h-screen z-1000 flex flex-row justify-start items-center pl-4"
         initial={{ x: "0vw", backgroundColor : "rgba(6, 32, 86, 0.95)"}}  // Start off-screen
         animate={isHovered ? { x: "50vw", backgroundColor : "rgba(15, 15, 15, 0.25)" } : { x: "0vw", backgroundColor : "rgba(6, 32, 86, 0.95)" }}  // Slide in on hover, revert on leave
         transition={{ duration: 1.5, ease: "easeInOut", delay : 1 }}  // Customize transition timing
-      />
+      >
+        <p className="absolute z-50 text-lg md:text-[3rem] lg:text-[6rem] fira-code">About <span className="relative z-50 fira-code light-blue text-lg md:text-[3rem] lg:text-[6rem]">Me</span></p>
+      </motion.div>
       <motion.div className="absolute w-2/3 text-4xl fira-code font-light"
       initial={{opacity : 0}}
       animate={isHovered ? {opacity : 1} : {opacity : 0}}

@@ -68,4 +68,23 @@ transition-duration: 0.1s;}
 .shadow-light-blue {
     -webkit-text-stroke: 3px solid rgba(56, 189, 248, 0.9) !important; color: transparent;
   }
-  
+
+.shooting-star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: shoot 3s ease-out forwards;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(700px) translateX(750px);
+        opacity: 0;
+    }
+}
+
+.change-bg {background-color: rgba(56, 189, 248, 0.9); color: rgba(1, 1, 1, 0.95); border-radius: 1rem;; transition-duration: 1s;}
+.revert {background-color: transparent; color : rgb(255, 255, 255, 0.95); border-radius: none; transition-duration: 1s;}
