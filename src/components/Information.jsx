@@ -15,12 +15,11 @@ const Information = () => {
       onMouseEnter={() => setIsHovered(true)}  // Trigger animation on hover
       onMouseLeave={() => setIsHovered(false)} // Revert animation on leave
     >
-      {/* First div sliding left */}
       <motion.div
         className="relative w-1/2 deep-blue-bg h-screen z-1000 flex flex-row justify-end items-center pr-4"
-        initial={{ x: "0vw", backgroundColor : "rgba(6, 32, 86, 0.95)" }}  // Start off-screen
+        initial={{ x: "0vw", backgroundColor : "rgba(6, 32, 86, 0.95)" }}
         animate={isHovered ? { x: "-50vw" , backgroundColor : "rgba(15, 15, 15, 0.25)" } : { x: "0vw", backgroundColor : "rgba(6, 32, 86, 0.95)" }}  // Slide in on hover, revert on leave
-        transition={{ duration: 1.5, ease: "easeInOut", delay : 1 }}  // Customize transition timing
+        transition={{ duration: 1.5, ease: "easeInOut", delay : 1 }}
       >
         <p className="absolute z-50 text-lg md:text-[3rem] lg:text-[6rem] fira-code">A <span className="relative text-lg md:text-[3rem] lg:text-[6rem] light-blue z-50 fira-code">little</span> bit</p>
       </motion.div>
