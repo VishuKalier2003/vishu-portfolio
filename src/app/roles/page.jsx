@@ -5,6 +5,7 @@ import Slider from "../../components/Slider";
 import Footer from "../../components/footer";
 import Journey from "../../components/rolesComponent/Journey";
 import MergedComponentI from "@/components/merged/MergedR1";
+import DomainProjects from "@/components/rolesComponent/DomainProjects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Journey />
       <MergedComponentI />
+      <DomainProjects />
       <Footer page={"roles"} />
     </div>
   );
