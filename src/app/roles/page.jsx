@@ -6,6 +6,8 @@ import Footer from "../../components/footer";
 import Journey from "../../components/rolesComponent/Journey";
 import MergedComponentI from "@/components/merged/MergedR1";
 import DomainProjects from "@/components/rolesComponent/DomainProjects";
+import ProjectsGlance from "@/components/rolesComponent/ProjectGlance";
+import GridSpace from "@/components/rolesComponent/GridSpace";
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
       <Slider />
       <Hero />
       <Journey />
+      <GridSpace />
       <MergedComponentI />
       <DomainProjects />
+      <ProjectsGlance />
       <Footer page={"roles"} />
     </div>
   );
