@@ -7,7 +7,7 @@ body {background-color : transparent; margin : 0px; outline : none; overflow-x: 
     padding: 0px; color : rgb(255, 255, 255, 0.95); font-family: "Fira Code", monospace;}
 
 .outline {border : 0.2px solid white;}
-.black-bg-25 {background-color: rgba(15, 15, 15, 0.25);}
+.black-bg-25 {background-color: #0f0f0f40;}
 .slider1 {top : 0px; left: 0px;}
 .slider2 {top : 20vh; left: 0px;}
 .slider3 {top : 40vh; left: 0px;}
@@ -27,19 +27,21 @@ body {background-color : transparent; margin : 0px; outline : none; overflow-x: 
 
 .h-36rem {height: 32rem;}
 
-.deep-blue {color : rgba(6, 32, 86, 0.95)}
+.deep-blue {color : #062056f2}
 .deep-blue-bg {background-color: rgba(6, 32, 86, 0.95);}
-.water-blue {color : rgba(8, 102, 242, 0.9)}
+.water-blue {color : #0866f2e6}
 .water-blue-bg {background-color: rgba(8, 102, 242, 0.9);}
-.light-blue {color : rgba(56, 189, 248, 0.9)}
+.light-blue {color : #38bdf8e6}
 .light-blue-bg {background-color: rgba(56, 189, 248, 0.9);}
 .navy-blue {color : rgba(99, 102, 241, 0.9)}
 .navy-blue-bg {background-color: rgba(99, 102, 241, 0.9);}
-.high-blue {color: rgba(0, 125, 255, 0.9);}
+.high-blue {color: #007dffe6;}
 .high-blue-bg {background-color: rgba(0, 125, 255, 0.9);}
 .bg-blue {background-color: rgba(6, 32, 86);}
-.black {color : rgba(0, 0, 0, 0.8);}
+.black {color : #000000cc;}
 .white-bg {background-color: rgba(255, 255, 255, 0.95);}
+.faded-light-blue {color : rgba(56, 189, 248, 0.25);}
+.faded-white {color : rgba(255, 255, 255, 0.45);}
 
 
 .block {
@@ -97,7 +99,7 @@ transition-duration: 0.1s;}
     border-top-color: rgba(56, 189, 248, 0.9);
     border-right-color: rgba(8, 102, 242, 0.9);
     border-bottom-color: rgba(0, 125, 255, 0.9);
-    border-left-color : rgba(6, 32, 86, 0.9);
+    border-left-color : hsla(221, 87%, 18%, 0.9);
     animation: rotateBorder 2s linear infinite;
 }
 
@@ -110,3 +112,13 @@ transition-duration: 0.1s;}
     }
 }
 
+.spacing-large {line-height: 12rem;}
+.spacing-medium {line-height: 6rem;}
+.spacing-low {line-height: 3rem;}
+
+.hover-opacity {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+.hover-opacity:hover {opacity : 1;}

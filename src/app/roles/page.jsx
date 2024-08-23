@@ -4,7 +4,7 @@ import Hero from "../../components/Hero";
 import Slider from "../../components/Slider";
 import Footer from "../../components/footer";
 import Journey from "../../components/rolesComponent/Journey";
-import PhysicsEngine from "@/components/rolesComponent/Overview";
+import MergedComponentI from "@/components/merged/MergedR1";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Slider />
       <Hero />
       <Journey />
-      <PhysicsEngine />
+      <MergedComponentI />
       <Footer page={"roles"} />
     </div>
   );

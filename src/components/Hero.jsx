@@ -1,9 +1,11 @@
 "use client";
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import ThreeScene from './3D/basic';
 
 const Hero = () => {
+    const containerRef = useRef(null);
     const [state, setState] = useState({ s1: false, s2: false, s3: false, s4: false, s5: false, s6: false });
 
     const mouseEnterOn = (index) => {
@@ -27,7 +29,7 @@ const Hero = () => {
             animate={{ x: '0vw' }}
             transition={{ type: 'tween', ease: 'easeOut', duration: 0.5, delay: 5 }}
         >
-            <div className="relative w-1/4 h-full flex flex-row justify-center items-center">
+            <div className="relative w-1/4 h-full flex flex-col lg:flex-row justify-center items-center">
                 <motion.div
                     className="relative flex flex-row"
                     initial={{ y: '-20vh' }}
@@ -35,11 +37,23 @@ const Hero = () => {
                     transition={{ type: 'tween', ease: 'easeOut', duration: 0.5, delay: 5.5 }}
                 >
                     <Link href="/">
+                        <div className='relative flex flex-row'>
                         <p className="relative text-xl md:text-3xl lg:text-4xl fira-code font-bold lg:font-100 high-blue cursor-pointer">
                             Vishu
                         </p>
+                        <p className="relative text-xl md:text-3xl lg:text-4xl fira-code lg:font-100 left-1">K.</p>
+                        </div>
                     </Link>
-                    <p className="relative text-xl md:text-3xl lg:text-4xl fira-code lg:font-100 left-1">K.</p>
+                </motion.div>
+                <motion.div
+                    className="relative flex flex-row"
+                    initial={{ y: '-20vh' }}
+                    animate={{ y: '0vh' }}
+                    transition={{ type: 'tween', ease: 'easeOut', duration: 0.5, delay: 5.5 }}
+                >
+                <section className='relative w-12 h-12 md:w-18 md:h-18 lg:w-24 lg:h-24' ref={containerRef}>
+                    <ThreeScene containerRef={containerRef}  />
+                </section>
                 </motion.div>
             </div>
 
