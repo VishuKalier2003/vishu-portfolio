@@ -7,6 +7,7 @@ body {background-color : transparent; margin : 0px; outline : none; overflow-x: 
     padding: 0px; color : rgb(255, 255, 255, 0.95); font-family: "Fira Code", monospace;}
 
 .outline {border : 0.2px solid white;}
+.outline1 {border : 0.2px solid red;}
 .black-bg-25 {background-color: #0f0f0f40;}
 .slider1 {top : 0px; left: 0px;}
 .slider2 {top : 20vh; left: 0px;}
@@ -123,10 +124,14 @@ transition-duration: 0.1s;}
 
 .hover-opacity:hover {opacity : 1;}
 /* Add this to your global stylesheet or a CSS module */
-.icon-domain .icon-domain1 {
+.icon-domain {
     transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
 }
 .icon-domain1 {
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
+}
+
+.icon-domain2 {
     transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
 }
 
@@ -134,3 +139,4 @@ transition-duration: 0.1s;}
     transform: scale(1.2); /* Example of a flip-3D animation */
 }
 .icon-domain1.animate {transform: scale(1.05);}
+.icon-domain2.animate {transform: scale(1.10);}

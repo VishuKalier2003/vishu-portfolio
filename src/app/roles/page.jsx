@@ -9,6 +9,7 @@ import DomainProjects from "@/components/rolesComponent/DomainProjects";
 import ProjectsGlance from "@/components/rolesComponent/ProjectGlance";
 import GridSpace from "@/components/rolesComponent/GridSpace";
 
+
 export default function Home() {
   return (
     <div>
@@ -20,7 +21,7 @@ export default function Home() {
       <MergedComponentI />
       <DomainProjects />
       <ProjectsGlance />
-      <Footer page={"roles"} />
+      <Footer page={"Roles"} />
     </div>
   );
 }

@@ -14,7 +14,8 @@ const Overview = () => {
     
     return(
         <section className="relative w-screen h-full pt-8 pb-8 flex flex-col lg:flex-row justify-center items-center" onMouseEnter={() => {entered()}}>
-            <motion.div className="relative w-full lg:w-[30rem] h-[22rem] lg:h-[30rem] hover-opacity"
+            <motion.div className="relative w-full lg:w-[30rem] h-[22rem] lg:h-[30rem]"
+            initial = {{opacity : 0}} animate={In ? {opacity : 1} : {opacity : 0}} transition={{type : "tween", duration : 1, delay : 0.5}}
              ref={containerRef}>
             <ThreeScene containerRef={containerRef}  />
           </motion.div>
