@@ -5,8 +5,9 @@ import { PiBrainDuotone } from "react-icons/pi";
 import { IoIosGitNetwork } from "react-icons/io";
 import { DiWebplatform } from "react-icons/di";
 import { RiToolsFill } from "react-icons/ri";
-import Link from 'next/link';
-import Image1 from '../../../public/ml-image.svg';
+import MlIconsSV11 from "./SVGIcons/ml";
+import ML2 from "./SVGIcons/ml1";
+
 
 const ProjectsGlance = () => {
 
@@ -26,6 +27,8 @@ const ProjectsGlance = () => {
         "Created Codebases and resolved bugs thereby, extensively integrating Web Development Iceberg to create future-ready projects.", 
         "Designed the Microservices architecture for vast projects to maintain strong retentivity and extensive scalability."
     ]
+
+    const iconsMore = [<MlIconsSV11 key="k1" />, <ML2 key="k2" />, <div></div>, <div></div>]
 
     const sendData = () => {
         const ele = document.getElementById('visit');
@@ -67,15 +70,18 @@ const ProjectsGlance = () => {
         const iconDomainElement = document.getElementById('icon-domain');
         const iconDomainElement1 = document.getElementById('icon-domain1');
         const ele3 = document.getElementById('icon-domain2');
+        const ele4 = document.getElementById('icon-domain3');
         if (iconDomainElement && iconDomainElement1) {
             iconDomainElement.classList.add('animate');
             iconDomainElement1.classList.add('animate');
             ele3.classList.add('animate');
+            ele4.classList.add('animate');
 
             const handle = setTimeout(() => {
                 iconDomainElement.classList.remove('animate');
                 iconDomainElement1.classList.remove('animate');
                 ele3.classList.remove('animate');
+                ele4.classList.remove('animate');
             }, 500);
 
             return () => clearTimeout(handle);
@@ -94,8 +100,8 @@ const ProjectsGlance = () => {
                         <p className="relative outline fira-code font-25 h-1/2 text-lg md:text-2xl lg:text-3xl icon-domain2 m-2 pl-4 md:pl-8 lg:pl-12 flex flex-row items-center" id='icon-domain2'>{paragraph[currentSectionIndex]}</p>
                     </div>
                 </div>
-                <div className='absolute w-full h-1/2 md:h-2/3 lg:w-1/3 lg:h-full outline top-1/2 md:top-1/3 lg:top-0 lg:left-2/3'>
-                    <img src={Image1.src} alt="Image not found !!" className='light-blue-bg'/>
+                <div className='absolute w-full h-1/2 md:h-2/3 lg:w-1/3 lg:h-full outline top-1/2 md:top-1/3 lg:top-0 lg:left-2/3 icon-domain3' id='icon-domain3'>
+                    {iconsMore[currentSectionIndex]}
                 </div>
             </div>
             <section className='relative outline w-screen h-[100vh]' id='sec1'></section>
