@@ -122,4 +122,15 @@ transition-duration: 0.1s;}
   }
 
 .hover-opacity:hover {opacity : 1;}
+/* Add this to your global stylesheet or a CSS module */
+.icon-domain .icon-domain1 {
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
+}
+.icon-domain1 {
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
+}
 
+.icon-domain.animate  {
+    transform: scale(1.2); /* Example of a flip-3D animation */
+}
+.icon-domain1.animate {transform: scale(1.05);}
