@@ -7,6 +7,8 @@ import { DiWebplatform } from "react-icons/di";
 import { RiToolsFill } from "react-icons/ri";
 import MlIconsSV11 from "./SVGIcons/ml";
 import ML2 from "./SVGIcons/ml1";
+import ML3 from "./SVGIcons/ml2";
+import ML4 from "./SVGIcons/ml4";
 
 
 const ProjectsGlance = () => {
@@ -28,7 +30,7 @@ const ProjectsGlance = () => {
         "Designed the Microservices architecture for vast projects to maintain strong retentivity and extensive scalability."
     ]
 
-    const iconsMore = [<MlIconsSV11 key="k1" />, <ML2 key="k2" />, <div></div>, <div></div>]
+    const iconsMore = [<MlIconsSV11 key="k1" />, <ML2 key="k2" />, <ML3 key='k3' />, <ML4 key='k4' />]
 
     const sendData = () => {
         const ele = document.getElementById('visit');
@@ -57,7 +59,6 @@ const ProjectsGlance = () => {
                         currentIndex = index;
                     }
                 });
-
                 setCurrentSectionIndex(currentIndex);
             }
         };
@@ -89,25 +90,25 @@ const ProjectsGlance = () => {
     }, [currentSectionIndex]);
 
     return (
-        <section ref={sectionRefer} className='relative outline w-screen h-[400vh] flex flex-col' id="canvas42">
-            <div ref={imgRef} className="absolute w-[85%] md:w-[90%] lg:w-[95%] h-[90vh] top-[1%] ml-[20px] md:ml-[40px] outline flex flex-row" id="img-class">
-                <div className='absolute w-full h-1/2 md:h-1/3 lg:w-2/3 lg:h-full outline flex flex-row'>
-                    <div className='absolute w-12 h-12 md:w-20 md:h-20 lg:w-24 lg:h-24 icon-domain outline' id='icon-domain'>
+        <section ref={sectionRefer} className='relative w-screen h-[400vh] flex flex-col' id="canvas42">
+            <div ref={imgRef} className="absolute w-[85%] md:w-[90%] lg:w-[95%] h-[90vh] top-[1%] ml-[20px] md:ml-[40px] flex flex-row rounded-3xl gap-y-4 " id="img-class">
+                <div className='absolute w-full h-1/2 md:h-1/3 lg:w-2/3 lg:h-full flex flex-row gap-y-4 md:gap-y-10 lg:gap-y-16'>
+                    <div className='absolute w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24 icon-domain -top-10 lg:top-8' id='icon-domain'>
                         {icons[currentSectionIndex]}
                     </div>
-                    <div className='relative w-full outline h-full flex flex-col justify-center items-start'>
-                        <p className="relative outline fira-code h-8 md:h-10 lg:h-12 text-2xl md:text-4xl lg:text-6xl icon-domain1 md:m-2 pl-4 md:pl-8 lg:pl-12" id='icon-domain1'>{tech[currentSectionIndex]}</p>
-                        <p className="relative outline fira-code font-25 h-1/2 text-lg md:text-2xl lg:text-3xl icon-domain2 m-2 pl-4 md:pl-8 lg:pl-12 flex flex-row items-center" id='icon-domain2'>{paragraph[currentSectionIndex]}</p>
+                    <div className='relative w-full h-full flex flex-col justify-center items-start'>
+                        <p className="relative fira-code h-8 md:h-10 lg:h-12 text-2xl md:text-4xl lg:text-6xl icon-domain1 md:m-2 pl-4 md:pl-8 lg:pl-12 light-blue" id='icon-domain1'>{tech[currentSectionIndex]}</p>
+                        <p className="relative fira-code font-25 h-1/2 text-lg md:text-2xl lg:text-3xl icon-domain2 m-2 pl-4 md:pl-8 lg:pl-12 flex flex-row items-center change-bg1 pr-4 md:pr-8 lg:pr-12 rounded-2xl" id='icon-domain2'>{paragraph[currentSectionIndex]}</p>
                     </div>
                 </div>
-                <div className='absolute w-full h-1/2 md:h-2/3 lg:w-1/3 lg:h-full outline top-1/2 md:top-1/3 lg:top-0 lg:left-2/3 icon-domain3' id='icon-domain3'>
+                <div className='absolute w-full h-1/2 md:h-2/3 lg:w-1/3 lg:h-full top-1/2 md:top-1/3 lg:left-2/3 icon-domain3' id='icon-domain3'>
                     {iconsMore[currentSectionIndex]}
                 </div>
             </div>
-            <section className='relative outline w-screen h-[100vh]' id='sec1'></section>
-            <section className='relative outline w-screen h-[100vh]' id='sec2'></section>
-            <section className='relative outline w-screen h-[100vh]' id='sec3'></section>
-            <section className='relative outline w-screen h-[100vh]' id='sec4'></section>
+            <section className='relative w-screen h-[100vh]' id='sec1'></section>
+            <section className='relative w-screen h-[100vh]' id='sec2'></section>
+            <section className='relative w-screen h-[100vh]' id='sec3'></section>
+            <section className='relative w-screen h-[100vh]' id='sec4'></section>
         </section>
     );
 }
