@@ -8,6 +8,7 @@ import MergedComponentI from "@/components/merged/MergedR1";
 import DomainProjects from "@/components/rolesComponent/DomainProjects";
 import ProjectsGlance from "@/components/rolesComponent/ProjectGlance";
 import GridSpace from "@/components/rolesComponent/GridSpace";
+import ProjectButton from "@/components/rolesComponent/ProjectsButton";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <MergedComponentI />
       <DomainProjects />
       <ProjectsGlance />
+      <ProjectButton />
       <Footer page={"Roles"} />
     </div>
   );
