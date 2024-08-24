@@ -93,7 +93,7 @@ const ProjectsGlance = () => {
         <section ref={sectionRefer} className='relative w-screen h-[400vh] flex flex-col' id="canvas42">
             <div ref={imgRef} className="absolute w-[85%] md:w-[90%] lg:w-[95%] h-[90vh] top-[1%] ml-[20px] md:ml-[40px] flex flex-row rounded-3xl gap-y-4 " id="img-class">
                 <div className='absolute w-full h-1/2 md:h-1/3 lg:w-2/3 lg:h-full flex flex-row gap-y-4 md:gap-y-10 lg:gap-y-16'>
-                    <div className='absolute w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24 icon-domain -top-10 lg:top-8' id='icon-domain'>
+                    <div className='absolute w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24 icon-domain top-1 md:-top-10 lg:top-8' id='icon-domain'>
                         {icons[currentSectionIndex]}
                     </div>
                     <div className='relative w-full h-full flex flex-col justify-center items-start'>
